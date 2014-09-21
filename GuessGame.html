@@ -1,0 +1,23 @@
+<!DOCTYPE <html>
+<head>
+    <title>Guessing Game CF1</title>
+</head>
+<body>
+    <script>
+        confirm("We're all dying to know: How much wood could a woodchuck chuck if a woodchuck could chuck wood?  Are you ready to guess?");
+        var userGuess = prompt("Enter your guess here. How many pounds of wood could a woodchuck chuck? Enter a whole number between 1 and 1000.");
+        var answer = 700;
+
+        if (userGuess === answer) {
+            alert("Well done! A woodchuck could chuck 700lbs of wood.");
+        } else if (userGuess < answer) {
+            alert("Woodchucks are small but mighty. Guess higher this time.");
+            return userGuess();
+        } else {
+            alert("Too high that time. Keep guessing.");
+            return userGuess();
+        }
+        };
+    </script>  
+</body>
+</html>
